@@ -90,16 +90,14 @@ section .infos{
     border-radius: var(--border-radius-sm);
 }
 
-/* 
-style of main board on which the game is played */
-
+ 
 .board{
     
     border: 1px solid var(--border-primary-color);
     flex-grow: 1;
     display:grid;
-    grid-template-columns: repeat(auto-fill,30px);
-    grid-template-rows: repeat(auto-fill,30px);
+    grid-template-columns: repeat(auto-fill,minmax(30px, 1fr));
+    grid-template-rows: repeat(auto-fill,minmax(30px, 1fr));
 
     
 
