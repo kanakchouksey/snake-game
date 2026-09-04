@@ -13,6 +13,7 @@ html,body{
     /* background colors */
     --bg-primary-color: #0c0c0c;
     --bg-fill-color: #5ac79f;
+    --bg-food-color: rgb(208, 91, 91);
 
 
     /* Text-colors */
@@ -116,4 +117,8 @@ section .infos{
 
 .fill{
     background-color: var(--bg-fill-color);
+}
+
+.food{
+    background-color: var(--bg-food-color);
 }
