@@ -13,6 +13,7 @@ html,body{
     /* background colors */
     --bg-primary-color: #0c0c0c;
     --bg-fill-color: #5ac79f;
+    --bg-btn-hover-color:rgb(240, 224, 224);
     --bg-food-color: rgb(208, 91, 91);
 
 
@@ -34,6 +35,7 @@ html,body{
     /* border-colors */
 
     --border-primary-color: #333333;
+
 
     /* border-radius */
 
@@ -68,7 +70,31 @@ main,section{
     height:100%;
 }
 
+
+/* start button css */
+
+.modal .start-game .btn{
+    height: 30px;
+    width: 100px;
+    padding: var(--space-xs);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-md);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+
+.btn:hover{
+    background-color: var(--bg-food-color);
+    color: var(--text-primary-color);
+    transform: scale(1.1);
+}
+
 /* style of the section which contain information and the board of the game */
+
+
 
 section{
     padding: var(--space-lg);
@@ -121,4 +147,23 @@ section .infos{
 
 .food{
     background-color: var(--bg-food-color);
+}
+
+.modal{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #35353587;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .start-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
 }
