@@ -73,7 +73,7 @@ main,section{
 
 /* start button css */
 
-.modal .start-game .btn{
+.modal  .btn{
     height: 30px;
     width: 100px;
     padding: var(--space-xs);
@@ -161,9 +161,19 @@ section .infos{
     align-items: center;
 }
 
-.modal .start-game{
+.modal .start-game, .modal .game-over{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--space-lg);
+}
+
+
+ .modal .game-over{
+
+    display:none;
+} 
+
+.modal .game-over .restart-btn{
+    margin-top: var(--space-lg);
 }
